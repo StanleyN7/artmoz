@@ -1,0 +1,26 @@
+$default: 'Roboto', sans-serif;
+
+$slick-font-family: none;
+
+$accent: #ff0000;
+/* $secondary: #4abfef; */
+$text: #363b3f;
+$textlight: #b8bdc1;
+
+$darkgray: #ececec;
+$lightgray: #f1f1f1;
+$white: #ffffff;
+
+/* Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"*/
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+/* $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1260px); */
+/* $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1230px); */
+/* $container-max-widths: (sm: 100%, md: 100%, lg: 100%, xl: 1230px); */
+
+$gutter: $grid-gutter-width;
