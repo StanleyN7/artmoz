@@ -3,7 +3,7 @@
 /**/source/
 /**/sass/
 /.git/
-# /app/css/
+/app/css/
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db
