@@ -2871,11 +2871,11 @@ ul {
   color: #363b3f;
   font-size: 12px;
   text-transform: uppercase;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1; }
+  /* position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1; */ }
   .header a:hover {
     color: #ff0000; }
 
@@ -2897,26 +2897,40 @@ ul {
   margin-left: 15px; }
 
 .header_content {
+  background: #f1f1f1;
   min-height: 55px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   z-index: 1; }
+  .header_content .container {
+    z-index: 1;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header_content.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; }
 
 .logo {
   height: 55px;
   padding-top: 10px;
   padding-bottom: 10px; }
+
+.menu .menu_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .menu .menu_item {
   position: relative; }
@@ -3301,6 +3315,13 @@ ul {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2; }
+  .header {
+    padding-top: 55px; }
+  .header_content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; }
   .menu {
     position: fixed;
     top: 0;
@@ -3334,6 +3355,8 @@ ul {
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
       transform: translateX(0); }
+    .menu .menu_list {
+      display: block; }
     .menu .sub-menu {
       position: relative; }
   .open_search {
