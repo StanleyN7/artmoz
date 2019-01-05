@@ -140,6 +140,9 @@ ul {
 .no_scroll {
 	overflow: hidden;
 }
+.hidden {
+	display: none !important;
+}
 .animate {
 	-webkit-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
@@ -201,6 +204,7 @@ ul {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	z-index: 1;
 }
 .logo {
 	height: 55px;
@@ -208,10 +212,10 @@ ul {
 	padding-bottom: 10px;
 }
 .menu {
-	display: -webkit-box;
+	/* display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
-	display: flex;
+	display: flex; */
 	/* -webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap; */
@@ -405,6 +409,114 @@ ul {
 		}
 	}
 }
+
+/*-- TOP NEWS SLIDER --*/
+.top_news {
+	border-bottom: 1px solid $middlegray;
+	background: $white;
+	text-transform: none;
+}
+.top_news_title {
+	font-size: 18px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.top_news_slider {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 14px;
+	.post_title {
+		font-weight: bold;
+		-webkit-transition: all 0.3s ease-out !important;
+		-o-transition: all 0.3s ease-out !important;
+		transition: all 0.3s ease-out !important;
+		&:hover {
+			color: $accent;
+		}
+	}
+	.post_date {
+		color: #aaaaaa;
+		font-size: 12px;
+		margin-left: 5px;
+		&:before {
+			content: '-';
+			display: inline-block;
+			margin-right: 3px;
+		}
+	}
+	.sp-slide {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+.top_news_nav {
+	font-size: 22px;
+	color: $placeholder;
+	-webkit-box-ordinal-group:3;
+	-webkit-order:2;
+	-ms-flex-order:2;
+	order:2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+	.next-btn,
+	.prew-btn {
+		margin-left: 10px;
+		margin-right: 10px;
+		cursor: pointer;
+		color: $darkgray;
+		@extend.animate;
+		&:hover {
+			color: $text;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
