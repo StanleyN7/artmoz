@@ -80,6 +80,27 @@
 	.footer {
 		text-align: center;
 	}
+	.latest_post {
+		.row {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+		}
+	}
+	.lp_article_wrap {
+		&:first-of-type {
+			.lp_article {
+				height: 50vw;
+			}
+		}
+	}
+	.lp_article {
+		height: 50vw;
+	}
+	.lp_article_title {
+		font-size: 34px;
+	}
 }
 
 /* ≥768px*/
@@ -93,6 +114,16 @@
 	    height: 0;
 	    overflow: hidden;
 	    border: none;
+	}
+	.lp_article_wrap {
+		&:first-of-type {
+			.lp_article_title {
+				font-size: 20px;
+			}
+		}
+	}
+	.lp_article_title {
+		font-size: 20px;
 	}
 }
 
