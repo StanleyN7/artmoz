@@ -2761,7 +2761,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   min-width: 320px;
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -2806,7 +2806,7 @@ a {
   text-decoration: none;
   color: inherit; }
   a:hover {
-    color: inherit;
+    color: #ff0000;
     text-decoration: none; }
 
 button, .btn {
@@ -2817,20 +2817,8 @@ button, .btn {
   border-radius: 3px;
   cursor: pointer;
   outline: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  display: inline-block; }
   button:focus, .btn:focus {
     outline: none; }
 
@@ -2841,6 +2829,10 @@ button, .btn {
   .btn_accent:hover {
     background: #ffffff;
     color: #ff0000; }
+
+.btn_text:hover {
+  background: #363b3f;
+  color: #ffffff; }
 
 input {
   outline: none;
@@ -2870,12 +2862,7 @@ ul {
   background: #f1f1f1;
   color: #363b3f;
   font-size: 12px;
-  text-transform: uppercase;
-  /* position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1; */ }
+  text-transform: uppercase; }
   .header a:hover {
     color: #ff0000; }
 
@@ -3111,8 +3098,6 @@ ul {
     -webkit-transition: all 0.3s ease-out !important;
     -o-transition: all 0.3s ease-out !important;
     transition: all 0.3s ease-out !important; }
-    .top_news_slider .post_title:hover {
-      color: #ff0000; }
   .top_news_slider .post_date {
     color: #aaaaaa;
     font-size: 12px;
@@ -3162,7 +3147,8 @@ ul {
 .latest_post {
   padding-top: 15px;
   padding-bottom: 15px;
-  overflow: hidden; }
+  overflow: hidden;
+  border-bottom: 1px solid #ececec; }
   .latest_post .row {
     display: block; }
   .latest_post .lp_article_wrap {
@@ -3225,8 +3211,6 @@ ul {
 .lp_article_title {
   font-size: 22px;
   line-height: normal; }
-  .lp_article_title:hover {
-    color: #ff0000; }
 
 .lp_article_content {
   position: relative;
@@ -3241,6 +3225,8 @@ ul {
   padding: 5px;
   font-size: 10px;
   text-transform: uppercase; }
+  .lp_article_category a:hover {
+    color: #ffffff; }
 
 .lp_article_info {
   display: -webkit-box;
@@ -3255,9 +3241,93 @@ ul {
   .lp_article_info i {
     margin-right: 5px; }
 
-.lp_article_comments:hover {
+/*-- ARTICLES LIST --*/
+.articles_list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-right: 1px solid #ececec; }
+
+.art_short {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #ececec; }
+  .art_short:last-of-type {
+    border: none; }
+
+.art_cat {
+  color: #ff0000;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: inline-block; }
+
+.art_title {
+  font-size: 36px;
+  line-height: normal; }
+
+.art_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #aaaaaa;
+  font-size: 12px;
+  margin-bottom: 15px; }
+
+.art_img {
+  margin-bottom: 30px;
+  display: block; }
+  .art_img img {
+    width: 100%; }
+
+.art_info_item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px; }
+  .art_info_item i {
+    margin-right: 5px; }
+
+.art_author {
+  text-transform: uppercase;
   color: #ff0000; }
 
+.art_short_descr {
+  line-height: 24px; }
+  .art_short_descr a {
+    color: #ff0000; }
+    .art_short_descr a:hover {
+      color: #363b3f;
+      text-decoration: underline; }
+
+/*-- PAGINATION --*/
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 30px; }
+
+.pagination_item {
+  border: 1px solid currentColor;
+  padding: 10px 15px;
+  margin: 5px; }
+  .pagination_item.active {
+    color: #ff0000; }
+  .pagination_item:hover {
+    background: #ff0000;
+    color: #ffffff; }
+
+/*-- NEWSBOX LATEST POSTS --*/
 /*-- FOOTER --*/
 .footer {
   font-size: 14px;
@@ -3364,7 +3434,9 @@ ul {
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .articles_list {
+    border: none; } }
 
 /* ≥992px*/
 @media (max-width: 991.98px) {
