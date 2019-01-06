@@ -717,7 +717,7 @@ ul {
 	.nb_block_title {
 		text-transform: uppercase;
 		font-size: 16px;
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 	}
 	.nb_img {
 		position: relative;
@@ -739,8 +739,43 @@ ul {
 		}
 	}
 
-
-
+/*-- ART MONEYBOX --*/
+	.art_moneybox {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.amb_post {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid $middlegray;
+		&:last-of-type {
+			border: none;
+		}
+	}
+	.amb_block_title {
+		text-transform: uppercase;
+		color: $accent;
+		margin-bottom: 15px;
+	}
+	.amb_img {
+		width: 50%;
+		position: relative;
+		height: 120px;
+		img {
+			height: 100%;
+		    width: 100%;
+		    -o-object-fit: cover;
+		    object-fit: cover;
+		}
+	}
+	.amb_title {
+		width: 50%;
+		padding-left: 10px;
+		margin-bottom: 0;
+	}
+	.amb_info {
+		margin-bottom: 0;
+	}
 
 
 

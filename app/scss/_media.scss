@@ -117,6 +117,12 @@
 	.lp_article_title {
 		font-size: 34px;
 	}
+	.amb_post,
+	.nb_art {
+		&:last-of-type {
+			border-bottom: 1px solid $middlegray;
+		}
+	}
 }
 
 /* ≥768px*/
@@ -140,6 +146,12 @@
 	}
 	.lp_article_title {
 		font-size: 20px;
+	}
+	.amb_post,
+	.nb_art {
+		&:last-of-type {
+			border: none;
+		}
 	}
 }
 
