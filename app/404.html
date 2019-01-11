@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>404</title>
+	<title>Home</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +26,8 @@
 	<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 	<!-- Fonts end -->
+
+	<link rel="stylesheet" href="libs/slider-pro/dist/css/slider-pro.min.css">
 
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -49,102 +51,354 @@
 				</nav>
 			</div>
 		</div>
-		<div class="header_content container">
-			<a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
-			<div class="menu_wrap">
-				<div class="burger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<ul class="menu">
-					<i class="fas fa-times close_menu_mob"></i>
-					<div class="social_networks social_networks_mob">
-						<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-						<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-						<a href="#" target="_blank"><i class="fas fa-rss"></i></a>
-						<a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-						<a href="#" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-						<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+		<div class="header_content">
+			<div class="container">
+				<a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+				<div class="menu_wrap">
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
-					<li class="menu_item menu_item_submenu">
-						<a href="https://www.facebook.com/">Newsbox</a>
-						<ul class="sub-menu">
-							<li class="menu_item"><a href="#">фрэш</a></li>
-							<li class="menu_item"><a href="#">на связи</a></li>
-							<li class="menu_item"><a href="#">говорят</a></li>
+					<div class="menu">
+						<i class="fas fa-times close_menu_mob"></i>
+						<div class="social_networks social_networks_mob">
+							<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+							<a href="#" target="_blank"><i class="fas fa-rss"></i></a>
+							<a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+							<a href="#" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+							<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+						</div>
+						<ul class="menu_list">
+							<li class="menu_item menu_item_submenu">
+								<a href="https://www.facebook.com/">Newsbox</a>
+								<ul class="sub-menu">
+									<li class="menu_item"><a href="#">фрэш</a></li>
+									<li class="menu_item"><a href="#">на связи</a></li>
+									<li class="menu_item"><a href="#">говорят</a></li>
+								</ul>
+							</li>
+							<li class="menu_item">
+								<a href="#">По душам</a>
+							</li>
+							<li class="menu_item">
+								<a href="#">Арт-копилка</a>
+							</li>
+							<li class="menu_item">
+								<a href="#">ТВ-кухня</a>
+							</li>
+							<li class="menu_item">
+								<a href="#">Вау!</a>
+							</li>
+							<li class="menu_item">
+								<a href="#">Psycho</a>
+							</li>
+							<li class="menu_item menu_item_submenu">
+								<a href="#">Lifestyle</a>
+								<ul class="sub-menu">
+									<li class="menu_item">
+										<a href="#">Красота</a>
+									</li>
+									<li class="menu_item">
+										<a href="#">Здоровье</a>
+									</li>
+									<li class="menu_item">
+										<a href="#">Фешен</a>
+									</li>
+									<li class="menu_item">
+										<a href="#">Дом</a>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</li>
-					<li class="menu_item">
-						<a href="#">По душам</a>
-					</li>
-					<li class="menu_item">
-						<a href="#">Арт-копилка</a>
-					</li>
-					<li class="menu_item">
-						<a href="#">ТВ-кухня</a>
-					</li>
-					<li class="menu_item">
-						<a href="#">Вау!</a>
-					</li>
-					<li class="menu_item">
-						<a href="#">Psycho</a>
-					</li>
-					<li class="menu_item menu_item_submenu">
-						<a href="#">Lifestyle</a>
-						<ul class="sub-menu">
-							<li class="menu_item">
-								<a href="#">Красота</a>
-							</li>
-							<li class="menu_item">
-								<a href="#">Здоровье</a>
-							</li>
-							<li class="menu_item">
-								<a href="#">Фешен</a>
-							</li>
-							<li class="menu_item">
-								<a href="#">Дом</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+					</div>
+				</div>
+				<div class="open_search" data-toggle="modal" data-target="#search_modal">
+					<i class="fas fa-search"></i>
+				</div>
 			</div>
-			<i class="fas fa-search open_search" data-toggle="modal" data-target="#search_modal"></i>
+		</div>
+		<div class="top_news">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 top_news_title">Топ новость</div>
+					<div class="col-lg-7 d-flex">
+						<div class="slider-pro top_news_slider">
+							<div class="sp-slides">
+								<div class="sp-slide">
+									<a class="post_title" href="#">Заголовок новости1</a>
+									<span class="post_date">11 мая, 2018</span>
+								</div>
+								<div class="sp-slide">
+									<a class="post_title" href="#">Заголовок новости2</a>
+									<span class="post_date">11 мая, 2018</span>
+								</div>
+								<div class="sp-slide">
+									<a class="post_title" href="#">Заголовок новости3</a>
+									<span class="post_date">11 мая, 2018</span>
+								</div>
+							</div>
+						</div>
+						<div class="top_news_nav">
+							<i class="fas fa-angle-up next-btn"></i>
+							<i class="fas fa-angle-down prew-btn"></i>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</header>
+
 	<main class="main">
-		404
+		<div class="container">
+			<div class="row">
+				<div class="newsbox_latest_posts col-lg-3 order-2 order-lg-1">
+					<h3 class="nb_block_title">Самые новые из ньюзбокс</h3>
+					<div class="row">
+						<article class="nb_art col-lg-12 col-md-6">
+							<div class="nb_img">
+								<img src="img/art1.jpg" alt="art_image">
+								<span class="nb_cat cat_block">
+									<a href="#">family</a>
+								</span>
+							</div>
+							<div class="art_info nb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-eye"></i>8450 views</span>
+							</div>
+							<h4><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+						</article>
+						<article class="nb_art col-lg-12 col-md-6">
+							<div class="nb_img">
+								<img src="img/art1.jpg" alt="art_image">
+								<span class="nb_cat cat_block">
+									<a href="#">family</a>
+								</span>
+							</div>
+							<div class="art_info nb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-eye"></i>8450 views</span>
+							</div>
+							<h4><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+						</article>
+						<article class="nb_art col-lg-12 col-md-6">
+							<div class="nb_img">
+								<img src="img/art1.jpg" alt="art_image">
+								<span class="nb_cat cat_block">
+									<a href="#">family</a>
+								</span>
+							</div>
+							<div class="art_info nb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-eye"></i>8450 views</span>
+							</div>
+							<h4><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+						</article>
+						<article class="nb_art col-lg-12 col-md-6">
+							<div class="nb_img">
+								<img src="img/art1.jpg" alt="art_image">
+								<span class="nb_cat cat_block">
+									<a href="#">family</a>
+								</span>
+							</div>
+							<div class="art_info nb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-eye"></i>8450 views</span>
+							</div>
+							<h4><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+						</article>
+						<article class="nb_art col-lg-12 col-md-6">
+							<div class="nb_img">
+								<img src="img/art1.jpg" alt="art_image">
+								<span class="nb_cat cat_block">
+									<a href="#">family</a>
+								</span>
+							</div>
+							<div class="art_info nb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-eye"></i>8450 views</span>
+							</div>
+							<h4><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+						</article>
+						<article class="nb_art col-lg-12 col-md-6">
+							<div class="nb_img">
+								<img src="img/art1.jpg" alt="art_image">
+								<span class="nb_cat cat_block">
+									<a href="#">family</a>
+								</span>
+							</div>
+							<div class="art_info nb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-eye"></i>8450 views</span>
+							</div>
+							<h4><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+						</article>
+					</div>
+				</div>
+
+				<div class="articles_list col-lg-6 order-1 order-lg-2">
+					<h1 class="pnf_title">страница не найдена</h1>
+					<div class="pnf_subtitle">может поищите что хотели?</div>
+					<form class="search" action="#">
+						<input type="search" placeholder="Что ищем">
+						<button type="submit" class="search_btn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+
+				<div class="art_moneybox col-lg-3 order-3">
+					<h3 class="amb_block_title"><a href="#">арткопилка</a></h3>
+					<div class="row">
+						<article class="amb_post col-lg-12 col-md-6">
+							<div class="art_info nb_info amb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-comments"></i>11</span>
+							</div>
+							<div class="d-flex">
+								<div class="amb_img">
+									<img src="img/art1.jpg" alt="art_image">
+									<span class="nb_cat cat_block">
+										<a href="#">family</a>
+									</span>
+								</div>
+								<h4 class="amb_title"><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+							</div>
+						</article>
+						<article class="amb_post col-lg-12 col-md-6">
+							<div class="art_info nb_info amb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-comments"></i>11</span>
+							</div>
+							<div class="d-flex">
+								<div class="amb_img">
+									<img src="img/art1.jpg" alt="art_image">
+									<span class="nb_cat cat_block">
+										<a href="#">family</a>
+									</span>
+								</div>
+								<h4 class="amb_title"><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+							</div>
+						</article>
+						<article class="amb_post col-lg-12 col-md-6">
+							<div class="art_info nb_info amb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-comments"></i>11</span>
+							</div>
+							<div class="d-flex">
+								<div class="amb_img">
+									<img src="img/art1.jpg" alt="art_image">
+									<span class="nb_cat cat_block">
+										<a href="#">family</a>
+									</span>
+								</div>
+								<h4 class="amb_title"><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+							</div>
+						</article>
+						<article class="amb_post col-lg-12 col-md-6">
+							<div class="art_info nb_info amb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-comments"></i>11</span>
+							</div>
+							<div class="d-flex">
+								<div class="amb_img">
+									<img src="img/art1.jpg" alt="art_image">
+									<span class="nb_cat cat_block">
+										<a href="#">family</a>
+									</span>
+								</div>
+								<h4 class="amb_title"><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+							</div>
+						</article>
+						<article class="amb_post col-lg-12 col-md-6">
+							<div class="art_info nb_info amb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-comments"></i>11</span>
+							</div>
+							<div class="d-flex">
+								<div class="amb_img">
+									<img src="img/art1.jpg" alt="art_image">
+									<span class="nb_cat cat_block">
+										<a href="#">family</a>
+									</span>
+								</div>
+								<h4 class="amb_title"><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+							</div>
+						</article>
+						<article class="amb_post col-lg-12 col-md-6">
+							<div class="art_info nb_info amb_info">
+								<span class="art_info_item"><i class="far fa-clock"></i>May 13, 2014</span>
+								<span class="art_info_item"><i class="fas fa-comments"></i>11</span>
+							</div>
+							<div class="d-flex">
+								<div class="amb_img">
+									<img src="img/art1.jpg" alt="art_image">
+									<span class="nb_cat cat_block">
+										<a href="#">family</a>
+									</span>
+								</div>
+								<h4 class="amb_title"><a href="#">Live Blog: Yeahthemes presents Sparkle – an Outstanding Magazine WordPress theme.</a></h4>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
 	</main>
+
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-9">1</div>
-				<div class="col-3">2</div>
+				<div class="col-lg-1">
+					<a class="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<div class="col-lg-7">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est accusantium et fugiat ex, eligendi excepturi impedit, ipsa rem adipisci voluptatem amet facilis, earum veritatis. Tempora voluptas fuga laudantium, maiores nemo!</p>
+				</div>
+				<div class="col-lg-4">
+					<div class="subscribe">
+						<h3>Подпишитесь!</h3>
+						<p>Подпишитесь на нашу электронную рассылку для получения полезных советов и ценных ресурсов, рассылаемых каждый второй вторник.</p>
+						<div class="input_wrap d-flex align-items-center justify-content-center justify-content-lg-start">
+							<input type="email" placeholder="Введите свой e-mail">
+							<button class="btn btn_accent" type="submit">Подписаться</button>
+						</div>
+					</div>
+				</div>
 				<div class="copyrights col-12">© Арт-Мозаика 2018</div>
 			</div>
 		</div>
 	</footer>
 
-	<div class="modal fade" id="search_modal">
+	<!-- MODALS -->
+
+	<div class="modal fade search_modal" id="search_modal">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-				<div class="modal-header d-flex flex-column align-items-center">
-
-				</div>
-				<div class="modal-body">
+				<div class="modal-body d-flex flex-column align-items-center">
+					<div class="modal_title">Поиск по сайту</div>
 					<form class="search" action="#">
-						<input type="search" placeholder="SEARCH">
+						<input type="search" placeholder="Что ищем">
 						<button type="submit" class="search_btn"><i class="fas fa-search"></i></button>
 					</form>
 				</div>
+				<i class="far fa-times-circle close_modal" data-dismiss="modal"></i>
+			</div>
 		</div>
 	</div>
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/bootstrap/js/popper.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/slider-pro/dist/js/jquery.sliderPro.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
