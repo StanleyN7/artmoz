@@ -3558,8 +3558,7 @@ ul {
     padding-left: 60px;
     margin-bottom: 0;
     padding-bottom: 0;
-    border-bottom: none;
-    min-width: 250px; }
+    border-bottom: none; }
 
 .comment_info {
   display: -webkit-box;
