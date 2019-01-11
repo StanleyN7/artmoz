@@ -38,6 +38,7 @@
 			arrows: false,
 			buttons: false,
 			autoplay: false,
+			// autoplay: true, // включить автоплей переключение топ новостей
 			autoplayOnHover: 'none',
 			orientation: 'vertical',
 			keyboard: false,
@@ -83,4 +84,12 @@
 		$('.main').css('padding-top', $('header').outerHeight() + 'px');
 	}
 
-
+// Comments answer
+	$('.answer_btn').on('click', function(){
+		$(this).slideUp(300);
+		$(this).closest('.comment').find('.answer_form:first').slideDown(300);
+	});
+	$('.cancel_btn').on('click', function(){
+		$(this).closest('.comment').find('.answer_btn').slideDown(300);
+		$(this).closest('.comment').find('.answer_form').slideUp(300);
+	});
