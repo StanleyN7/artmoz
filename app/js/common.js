@@ -2,11 +2,11 @@
 	$('.burger').on('click', function() {
 		$('.menu').addClass('active');
 	});
-	$('.menu_item_submenu a').on('click', function(e) {
+	$('.menu_item_submenu > a').on('click', function(e) {
 		if ($( window ).width() <= 1199){
 			if(!$(this).hasClass('active')) {
 				e.preventDefault();
-				$('.menu_item_submenu a').removeClass('active');
+				$('.menu_item_submenu > a').removeClass('active');
 				$(this).addClass('active');
 				$('.sub-menu').slideUp(300);
 				$(this).closest('.menu_item_submenu').find('.sub-menu').slideDown(300);
