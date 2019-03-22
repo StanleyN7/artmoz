@@ -3226,17 +3226,25 @@ ul {
     opacity: 0.45; }
 
 .lp_article_title {
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: 18px;
   line-height: normal; }
 
 .lp_article_content {
   position: relative;
   width: 100%;
-  padding: 20px; }
+  padding: 15px;
+  padding-top: 30px;
+  max-height: 100%;
+  overflow: auto; }
+  .lp_article_content .art_info_item {
+    padding: 0;
+    margin: 0; }
 
 .lp_article_category {
   left: 0;
-  bottom: 100%; }
+  top: 0;
+  /* bottom: 100%; */ }
 
 .lp_article_info {
   display: -webkit-box;
